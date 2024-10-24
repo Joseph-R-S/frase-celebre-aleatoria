@@ -1,0 +1,8 @@
+const idioma = [
+  'pt',
+  'es',
+]
+  
+
+
+

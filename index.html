@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase Aleatoria</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="contenido">
+            <h2 id="autor"></h2>
+            <div class="ancoras">
+                <span>famous quotes</span>
+                <span>inspirational</span>
+            </div>
+
+            <div class="frase">
+                <span id="frase"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenedor-botones">
+        <button class="btn left" onclick="getFrase();"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="btn right" onclick="copiar();" id="btn-copiar"><i class="fa-solid fa-paperclip"></i></button>
+    </div>
+
+    <div class="idioma-contenedor">
+        <label for="idioma">select a language:</label>
+        <select name="idioma" onchange="traducir();">
+            <option value="pt">Português</option>
+            <option value="es">Espanhol</option>
+        </select>
+    </div>
+    <footer>
+        <p>Desarrolado por: Joseph Rafael Sanchez</p>
+        <a href="https://wa.me/+5565981429242" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a target="_blank"
+            href="https://www.linkedin.com/in/joseph-r-s?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </footer>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/a101ea8c75.js" crossorigin="anonymous"></script>
+
+    <script src="./idioma.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
